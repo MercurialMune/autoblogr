@@ -1,0 +1,39 @@
+{%extends 'base.html'%}
+
+
+
+{%block styles%}
+{%endblock%}
+{%block content%}
+<!--Main layout-->
+  <main class="mt-5 pt-5 mb-5">
+    <div class="container " style="min-height:90vh">
+
+
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mdb-color darken-2 mt-4">
+
+
+    <!-- Social icons -->
+    <div class="pb-4 pt-4">
+        © <span id="year"></span> Copyright:
+      <a href="https://github.com/MercurialMune/" target="_blank"> Mercurial Mune </a>
+    </div>
+    <!-- Social icons -->
+
+
+
+  </footer>
+  <!--/.Footer-->
+
+{%endblock%}
+{%block scripts%}
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+{%endblock%}
